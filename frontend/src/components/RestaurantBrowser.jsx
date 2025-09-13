@@ -26,7 +26,7 @@ const RestaurantBrowser = () => {
   const fetchAllRestaurants = async () => {
     setLoading(true);
     try {
-      // Get all restaurants by calling with empty params
+
       const res = await api.get('/restaurants');
       setAllRestaurants(res.data.restaurants || []);
       setRestaurants(res.data.restaurants || []);
